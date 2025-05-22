@@ -132,7 +132,7 @@ def create_demo() -> gr.Blocks:
 
 if __name__ == "__main__":
     # run enhance_image without gradio just for test
-    input_image = Image.open("test.jpg")
+    input_image = Image.open("/content/passport_enhance/test.jpg")
     output_image, enhance_image_path = enhance_image(input_image, 2, "Only Image Enhance")
     output_image.show()
     # save the output image
